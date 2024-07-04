@@ -1,14 +1,15 @@
-import React from 'react'
-import MagicButton from './ui/MagicButton'
-import { FaLocationArrow, FaInstagram, FaWhatsapp, FaFacebook, FaTelegram, FaLinkedin, FaGithub } from 'react-icons/fa'
+import React from 'react';
+import MagicButton from './ui/MagicButton';
+import { FaLocationArrow, FaLinkedin, FaGithub, FaPhone } from 'react-icons/fa';
+import { FaUpwork } from 'react-icons/fa6';
+import { GrCertificate } from 'react-icons/gr';
 
 const socialMedia = [
-  { id: 'instagram', icon: <FaInstagram />, url: 'https://www.instagram.com/prinz_nahii' },
-  { id: 'whatsapp', icon: <FaWhatsapp />, url: 'https://wa.me/+251941515665' },
-  { id: 'facebook', icon: <FaFacebook />, url: 'https://www.facebook.com/profile.php?id=61561978731894' },
-  { id: 'telegram', icon: <FaTelegram />, url: 'https://t.me/prinz_nahiii' },
+  { id: 'phone', icon: <FaPhone />, url: 'tel:+251941515665' },
+  { id: 'upwork', icon: <FaUpwork />, url: 'https://www.upwork.com/freelancers/~01349f74f7901c56a9' },
   { id: 'linkedin', icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/nahom-teshome-581042293/' },
-  { id: 'github', icon: <FaGithub />, url: 'https://github.com/Prinznahi' }
+  { id: 'github', icon: <FaGithub />, url: 'https://github.com/Prinznahi' },
+  { id: 'certificates', icon: <GrCertificate />, url: 'https://drive.google.com/drive/folders/1lNI7fFdlXbq3oDmD_wmFV1BrCefBHN-y?usp=drive_link' }
 ];
 
 const Footer = () => {
@@ -35,10 +36,10 @@ const Footer = () => {
         ))}
       </div>
       <div className='flex mt-16 md:flex-row flex-col justify-center items-center'>
-        <p className='md:text-base text-xs md:font-normal text-gray-500 font-light'>Copyright © 2024 NT</p>
+        <p className='md:text-base text-xs md:font-normal text-gray-500 font-light'>Copyright © 2024, All Right Reserved | Nahom Teshome</p>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
